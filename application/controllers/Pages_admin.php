@@ -10,19 +10,20 @@ class Pages_admin extends CI_Controller {
         parent::__construct();
         //Do your magic here
         if (!$this->session->userdata('account')) {
-            $this->message_model->pushAlertMessage('warning', 'Session expired! Please try to login again!');
+            $this->utils_model->pushAlertMessage('warning', 'Session expired! Please try to login again!');
             redirect('login');
         }
     }
 
     public function view($page = 'dashboard')
     {
-        print_r($_SESSION);
-        $data = '';
+        $data = array(
+            'page' => $page,
+        );
         $this->load
-            ->view('admin/template/top', $data)
+            ->view('admin/template/header', $data)
             ->view('admin/' . $page, $data)
-            ->view('admin/template/bot', $data);
+            ->view('admin/template/footer', $data);
     }
     
 
