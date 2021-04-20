@@ -6,7 +6,7 @@
     <!-- BEGIN: Footer-->
     <footer class="footer footer-static footer-light">
         <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">
-        © Copyright 2021 <a href="https://meganet.com.vn/" target="_blank">Thế Hệ Mới</a>
+        © Copyright 2021 <a href="https://meganet.com.vn/" target="_blankcc">Thế Hệ Mới</a>
         <span class="d-none d-sm-inline-block"> All rights Reserved</span></span><span class="float-md-right d-none d-md-block">Hand-crafted & Made with<i data-feather="heart"></i></span></p>
     </footer>
     <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
@@ -30,7 +30,7 @@
     <!-- BEGIN: Page JS-->
     <script src="/public/app-assets/js/scripts/pages/dashboard-ecommerce.js"></script>
     <!-- END: Page JS-->
-    <?php } elseif($page == 'users'){?>
+    <?php } elseif($page == 'documents'){?>
     <!-- BEGIN: Vendor JS-->
     <script src="/public/app-assets/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
